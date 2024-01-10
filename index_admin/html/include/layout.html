@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MyOwnItem</title>
+
+	<link rel="stylesheet" type="text/css" href="../static/css/font.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css" media="all">
+
+	<link rel="stylesheet" type="text/css" href="../static/vendor/fontawesome/css/all.min.css" media="all">
+
+	<script type="text/javascript" src="../static/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="../static/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../static/vendor/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../static/js/common.js"></script>
+</head>
+
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- header -->
+		<header class="header">
+			<div class="container-fluid">
+				<div class="left">
+					<h2 class="h2">Dashboard</h2>
+				</div>
+				<div class="right">
+					<div class="top-nav">
+						<span class="top-nav__item" >Admin</span>
+						<a href="./m-a-01-001.html" class="top-nav__item link-dark" >Log Out</a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+		<!-- //header -->
+
+		<!-- fullmenu -->
+		<nav class="fullmenu">
+			<h1 class="logo">
+				<a href="./m-a-02-001.html">MOI</a>
+			</h1>
+
+			<!--**메뉴 영역 시작-->
+			<ul class="lnb_list">
+				<li id="dashboard" class="on"><a href="./m-a-02-001.html">Dashboard</a></li>
+				<li id="contents"><a href="./m-a-03-001.html">Contents</a></li>
+				<li id="trade"><a href="./m-a-04-001.html">Trade</a></li>
+				<li id="members"><a href="./m-a-05-001.html">Members</a></li>
+				<li id="popup_banner"><a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Pop Up/Banner</a></li>
+				<li class="collapse" id="collapseExample">
+					<ul id="popup_bannerList">
+						<li id="popup"><a href="./m-a-06-001.html">Pop Up</a></li>
+						<li id="banner"><a href="./m-a-06-002.html">Banner</a></li>
+					</ul>
+				</li>
+				<li id="event"><a href="./m-a-07-001.html">Event</a></li>
+				<li id="faq"><a href="./m-a-08-001.html">FAQ</a></li>
+			</ul>
+			<input type="hidden" value="dashboard" id="leftSelect">
+		</nav>
+		<!-- //fullmenu -->
+
+		<!-- contents -->
+		<div class="contents">
+
+		</div>
+		<!-- //contents -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<footer id="footer">
+				<div class="container-fluid">
+					Copyright ⓒ My. All Rights Reserved.
+				</div>
+			</footer>
+		</footer>
+		<!-- //footer -->
+
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

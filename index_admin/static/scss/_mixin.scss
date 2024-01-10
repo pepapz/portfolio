@@ -1,0 +1,168 @@
+/************************************/
+/*              mixins              */
+/************************************/
+@mixin ellipsis($line-cnt) { 
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+	display: -webkit-box; 
+	-webkit-line-clamp: $line-cnt; /* 라인수 */ 
+	-webkit-box-orient: vertical; 
+	word-wrap:break-word; 
+	line-height:1.2; 
+	white-space: nowrap;
+}
+
+@mixin placehoder($color) {
+	&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: $color;
+		opacity: 1; /* Firefox */
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: $color;
+	}
+	&::-ms-input-placeholder { /* Microsoft Edge */
+		color: $color;
+	}
+}
+
+@mixin block-border() {
+	position: relative;
+	border-bottom: 1px solid $white;
+	&:after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 2px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background-color: $gray-200;
+	}
+}
+
+@mixin custom-scroll($align) {
+	@if $align == 'y' {
+		overflow-x: hidden;
+		overflow-y: auto;
+	} @else {
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+	&::-webkit-scrollbar {
+		width: 20px;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: #ffffff;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: #d9d9d9;
+		border-radius: 20px;
+		border: 6px solid transparent;
+		background-clip: content-box;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: #cccccc;
+	}
+}
+
+@mixin opacity-scroll($align) {
+	&::-webkit-scrollbar {
+		width: 3px;
+	}
+	&::-webkit-scrollbar-track {
+		
+		background-color: transparent;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: #999;
+		border-radius: 2px;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: #999;
+	}
+}
+
+@mixin display-flex-justify($justify) {
+	// 플렉스 컨테이너에 적용. 아이템 주축 start 정렬.
+	@if $justify == 'start' {
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+	}
+	
+	// 플렉스 컨테이너에 적용. 아이템 주축 end 정렬.
+	@if $justify == 'end' {
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+	}
+	
+	// 플렉스 컨테이너에 적용. 아이템 주축 center 정렬.
+	@if $justify == 'center' {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	
+	// 플렉스 컨테이너에 적용. 아이템 주축 space-between 정렬.
+	@if $justify == 'between' {
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+}
+
+@mixin display-flex-align($align) {
+	// 플렉스 컨테이너에 적용. 아이템 교차축 start 정렬.
+	@if $align == 'start' {
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		align-items: flex-start;
+	}
+	
+	// 플렉스 컨테이너에 적용. 아이템 교차축 end 정렬.
+	@if $align == 'end' {
+		-webkit-box-align: end;
+		-ms-flex-align: end;
+		align-items: flex-end;
+	}
+	
+	// 플렉스 컨테이너에 적용. 아이템 교차축 center 정렬.
+	@if $align == 'center' {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	
+	// 플렉스 컨테이너에 적용. 아이템 교차축 stretch 정렬.
+	@if $align == 'stretch' {
+		-webkit-box-align: stretch;
+		-ms-flex-align: stretch;
+		align-items: stretch;
+	}
+	
+	// 플렉스 컨테이너에 적용. 아이템 교차축 baseline 정렬.
+	@if $align == 'baseline' {
+		-webkit-box-align: baseline;
+		-ms-flex-align: baseline;
+		align-items: baseline;
+	}
+}
+
+@mixin display-flex($flex, $align, $justify) {
+	
+	@if $flex == 'inline' {
+		
+		display: inline-flex;
+		
+	} @else {
+		
+		display: -webkit-box;
+		display:-ms-flexbox; 
+		display: flex;
+	}
+	
+	@include display-flex-justify($justify);
+	@include display-flex-align($align);
+	
+}

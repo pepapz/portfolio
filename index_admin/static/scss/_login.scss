@@ -1,0 +1,37 @@
+/************************************/
+/*              login              */
+/************************************/
+
+.login {
+	&-wrap {
+		@include display-flex(flex, center, center);
+		position: relative;
+		flex-direction: column;
+		min-width: 1440px;
+		min-height: 100%;
+	}
+	&-box {
+		@include display-flex(flex, center, center);
+		flex-direction: column;
+		width: 30%;
+		padding: 80px;
+		background-color: $white;
+		border-radius: 20px;
+		box-shadow: 0px 3px 5px 0 rgba(204, 204, 204, 0.3);
+		&__logo {
+			width: 130px;
+			margin-bottom: 0;
+			a {
+				display: block;
+				width: 130px;
+				height: 46px;
+				text-indent: -9999px;
+				background-color: $white;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-image: url("../img/common/moi-logo.png");
+				background-size: 130px 46px;
+			}
+		}
+	}
+}

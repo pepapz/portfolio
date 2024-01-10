@@ -1,0 +1,446 @@
+@charset "utf-8";
+
+.c-53f6c6 {
+    color: #53f6c6;
+}
+.box-53f6c6 span {
+    font-size: 70px;
+}
+
+.box-53f6c6 {
+    width: 77px;
+    height: 77px;
+    background-color: #53f6c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-5cd9b4 {
+    color: #5cd9b4;
+}
+
+.c-white {
+    color: white;
+}
+.bold {
+    font-weight: bold;
+}
+.s-30 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.p-post {
+    font-size: 14px;
+    color: #282828;
+    line-height: 25px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+#head {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 115px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+}
+#logo img {
+    width: 100%;
+}
+
+#nav {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+#nav ul {
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+}
+#nav ul li a {
+    color: black;
+    transition: all 0.3s;
+}
+#nav ul li a:hover {
+    color: #53f6c6;
+}
+
+.nav4 {
+    display: none;
+}
+.nav-tog {
+    display: none;
+}
+
+#hd-icon {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+}
+#hd-icon ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#hd-icon ul li a {
+    color: black;
+    transition: all 0.3s;
+}
+#hd-icon ul li a:hover {
+    color: #53f6c6;
+}
+
+#category {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 55px 45px;
+}
+#category ul {
+    width: 1200px;
+    display: flex;
+    font-size: 18px;
+    margin: 0 auto;
+}
+#category ul li {
+    margin-right: 15px;
+    font-style: italic;
+}
+
+section {
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    padding: 70px 0;
+}
+
+#post {
+    width: 80%;
+    height: auto;
+}
+
+.post-img1 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.post-box {
+    margin-bottom: 50px;
+}
+
+.box-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.box-title h4 {
+    font-size: 18px;
+    width: 88%;
+}
+
+.box-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.box-img img {
+    width: 49%;
+}
+
+.post-info {
+    font-size: 13px;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.julia {
+    margin-top: 50px;
+    display: flex;
+    border-top: 1px dashed #d0d0d0;
+    border-bottom: 1px dashed #d0d0d0;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.julia-txt {
+    width: 79%;
+}
+
+.other {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    width: 45%;
+}
+.right {
+    width: 29%;
+}
+.other span {
+    font-size: 13px;
+    font-style: italic;
+}
+h6 {
+    font-size: 14px;
+}
+.other-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#comment {
+    margin-top: 50px;
+}
+.s-18 {
+    font-size: 18px;
+}
+.p-20 {
+    padding: 20px 0;
+}
+.comment-box {
+    display: flex;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.comment-img img {
+    width: 60px;
+    height: 60px;
+}
+.comment-txt {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.comment-txt span a {
+    color: #292929;
+    transition: all 0.3s;
+}
+.comment-txt span a:hover {
+    color: #5cd9b4;
+}
+
+.dashed {
+    border-bottom: 1px dashed #d0d0d0;
+}
+.reply {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.children {
+    padding-left: 83px;
+}
+
+#add {
+    margin-top: 50px;
+}
+
+#add button {
+    display: block;
+    border: none;
+    outline: none;
+    background-color: #53f6c6;
+    font-weight: bold;
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#submenu {
+    margin-left: 50px;
+    width: 25%;
+    height: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.subbox {
+    width: 100%;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.categoties li {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social li {
+    width: 30px;
+    height: 30px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagcloud {
+    width: 80%;
+    height: 40px;
+}
+.tagcloud li {
+    float: left;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.tagcloud li a {
+    color: black;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: 100px;
+}
+#footer-wrap {
+    background-color: black;
+    padding: 100px 0;
+    color: white;
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer-logo {
+    width: 115px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+}
+.footer-logo img {
+    width: 100%;
+}
+
+.footer-box {
+    width: 25%;
+}
+
+.footer-box-title {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.footer-box-title img {
+    width: 116px;
+    height: 23px;
+}
+.footer-box-title h4 {
+    font-size: 18px;
+}
+
+.footer-box p {
+    font-size: 14px;
+}
+.footer-box span {
+    display: block;
+    font-size: 14px;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+}
+.footer-box ul li a {
+    font-size: 14px;
+    color: white;
+    transition: all 0.4s;
+}
+.footer-box ul li a:hover {
+    color: #53f6c6;
+}
+
+#footer-wrap p:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+
+#email-send {
+    padding-top: 10px;
+    width: 90%;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+#email-send input {
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+}
+#email-send button {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+}
+
+#foot {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 25px 0;
+}
+#foot-wrap {
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#foot-wrap span {
+    font-size: 15px;
+    color: #2d3e39;
+}
+
+.follow {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.follow span {
+    color: #2d3e39;
+}
+.follow i {
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.follow i:hover {
+    color: white;
+}

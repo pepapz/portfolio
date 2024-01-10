@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+    <title>Raven</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 599px)" href="css/max_599.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 999px)" href="css/min_600.css">
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/min_1000.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/dd7db55642.js" crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApdZCCjDu8wijtSdIvRGjRIrHIHXLBxMw&callback=initMap&region=kr"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header-wrap">
+            <div id="logo">
+                <a href="#"><img src="img/raven-logo.svg"></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="sub.html">HOME</a>
+                    </li>
+                    <li><a href="sub.html">PAGE</a>
+                    </li>
+                    <li><a href="sub.html">TEAM</a></li>
+                    <li><a href="sub.html">TESTIMOIAL</a></li>
+                    <li><a href="sub.html">COMPONENTS</a></li>
+                    <li><a href="sub.html">DOCUMENTATION</a></li>
+                </ul>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-align-justify"></i>
+            </div>
+            <div class="nav2">
+                <ul>
+                    <li><a href="#">HOME</a>
+                    </li>
+                    <li class="blue"><a href="#">PAGE</a>
+                    </li>
+                    <li><a href="#">TEAM</a></li>
+                    <li><a href="#">TESTIMOIAL</a></li>
+                    <li><a href="#">COMPONENTS</a></li>
+                    <li><a href="#">DOCUMENTATION</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="home-slider">
+        <div id="slide-img">
+            <div id="slide-text">
+                <h1>Ranked</h1><span>#1</span>
+                <h3>World Class Law Firm In</h3>
+                <h2>Los Angeles & NYC.</h2>
+                <p>At a large firm, it is all too easy to feel lost. At Raven pro, we promise to listen to your concerns and ideas.</p>
+                <button class="btn">Recent Cases</button><button class="arrow-btn">▶</button><button>Documentary</button>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div id="recognition">
+            <button class="a">Recognition</button>
+            <h1 class="b">Our Attorneys Have Been Recognized By Some Of The</h1>
+            <h2 class="c">Most Prestigious</h2>
+            <h3>Legal Organizations</h3>
+            <div id="rating">
+                <div class="slider">
+                    <ul class="panel">
+                        <li>
+                            <div class="rating-box">
+                                <div class="rating-logo">
+                                    <img src="img/r-1.png" alt="rating">
+                                </div>
+                                <div class="rating-text">
+                                    <button>★20</button>
+                                    <p class="d">Avvo rating comes from its magic robot crawling the Internet to track mentions of lawyers and get a sense of their accomplishments.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-box">
+                                <div class="rating-logo">
+                                    <img src="img/r-3.png" alt="rating" width="150" height="150">
+                                </div>
+                                <div class="rating-text">
+                                    <button>★15</button>
+                                    <p class="d">The NJSBA is a voluntary organization of over 18,000 members in the legal profession. We also educate the public to enhance awareness of the legal system.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-box">
+                                <div class="rating-logo">
+                                    <img src="img/r-2.png" alt="rating" width="150" height="150">
+                                </div>
+                                <div class="rating-text">
+                                    <button>★10</button>
+                                    <p class="d">The Lead Counsel Rating offers consumers and businesses an objective and comprehensive evaluation tool to use when selecting legal representation.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-box">
+                                <div class="rating-logo">
+                                    <img src="img/r-3.png" alt="rating" width="150" height="150">
+                                </div>
+                                <div class="rating-text">
+                                    <button>★15</button>
+                                    <p class="d">The NJSBA is a voluntary organization of over 18,000 members in the legal profession. We also educate the public to enhance awareness of the legal system.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div id="about-text">
+                <button class="a">About us</button>
+                <h1 class="b ">Who Are</h1>
+                <h2 class="c heading-underline heading-underline-1">We</h2>
+                <p class="d">At Attorney, we believe that everyone is entitled to justice. We represent clients from all walks of life who have been victimized by unlawful or unsafe conduct.</p>
+                <br>
+                <p class="d">Because we believe so strongly in our clients and their cases, we work on a contingency fee basis.</p><span>You pay no attorney fees until we settle or win your case.</span>
+                <button class="btn">Find Out More</button>
+            </div>
+            <div id="about-img">
+                <img src="img/member-1.png" alt="member1">
+                <img src="img/member-2.png" alt="member2">
+                <img src="img/member-3.png" alt="member3">
+            </div>
+        </div>
+        <div id="service">
+            <button class="a">Our services</button>
+            <div class="title">
+                <h1 class="b heading-underline heading-underline-1">What We Offer<span class="c"> Our Clients</span></h1>
+            </div>
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="img/icon-1.png" alt="icon1" width="70" height="60">
+                </div>
+                <div class="service-text">
+                    <h3>Proven Track Record</h3>
+                    <p class="d">We offer the best service to our clients, which is why we have been so successful in what we do. We are driven to get the best results for our clients.</p>
+                    <span><a href="#">Explore now ></a></span>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="img/icon-2.png" alt="icon2" width="70" height="60">
+                </div>
+                <div class="service-text">
+                    <h3>No Fees Unless We Win</h3>
+                    <p class="d">Our firm never charges any upfront fees. We handle personal injury cases on a contingency fee basis, which means, you don’t pay a thing unless we win or settle your case.</p>
+                    <span><a href="#">Explore now ></a></span>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="img/icon-3.png" alt="icon3" width="70" height="60">
+                </div>
+                <div class="service-text">
+                    <h3>Multilingual Staff</h3>
+                    <p class="d">Effective communication is the key to our success. Our friendly and multilingual team speaks Spanish, French, Mandarin, Persian, Italian, Japanese, and Armenian.</p>
+                    <span><a href="#">Explore now ></a></span>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="img/icon-4.png" alt="icon4" width="70" height="60">
+                </div>
+                <div class="service-text">
+                    <h3>Available 24/7</h3>
+                    <p class="d">Unlike many other firms, we are available 24/7. You can always count on our firm to be there when you need us the most. We are available in person and over the phone.</p>
+                    <span><a href="#">Explore now ></a></span>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="img/icon-5.png" alt="icon5" width="70" height="60">
+                </div>
+                <div class="service-text">
+                    <h3>60 years of collective experience</h3>
+                    <p class="d">Attorney pro is a top-rated law firm with over 60 years of experience. Our attorneys have worked for the largest firm in Los Angeles and now leverage their backgrounds.</p>
+                    <span><a href="#">Explore now ></a></span>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="img/icon-6.png" alt="icon6" width="70" height="60">
+                </div>
+                <div class="service-text">
+                    <h3>Experienced Trial Attorneys</h3>
+                    <p class="d">Our trial attorneys have extensive experience in successfully winning tough cases, which has resulted in winning over $1 billion for our clients.</p>
+                    <span><a href="#">Explore now ></a></span>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="img/icon-7.png" alt="icon7" width="70" height="60">
+                </div>
+                <div class="service-text">
+                    <h3>Focus on Personal Injury Cases</h3>
+                    <p class="d">Our attorneys specialize in personal injury cases. And we are passionate about pursuing justice on behalf of our injury victims and their families and friends.</p>
+                    <span><a href="#">Explore now ></a></span>
+                </div>
+            </div>
+            <div class="service-last-box">
+                <h5>To Know More About</h5>
+                <h4>Our Speciality</h4>
+                <button class="btn">Click Here</button>
+            </div>
+        </div>
+        <div id="practice">
+            <div id="practice-learn">
+                <div class="practice-learn-box">
+                    <button class="e">1</button>
+                    <div class="practice-learn-text">
+                        <h3>Personal Injury</h3>
+                        <p class="d">At West Attorney, we have helped injury victims across the state of California recover compensation for their injuries.</p>
+                    </div>
+                </div>
+
+                <div class="practice-learn-box">
+                    <button class="e">2</button>
+                    <div class="practice-learn-text">
+                        <h3>Criminal Defense</h3>
+                        <p class="d">We helped to defend people accused of committing a crime against prosecution by the government, to reduce their sentencing or help them stay out of jail.</p>
+                    </div>
+                </div>
+
+                <div class="practice-learn-box">
+                    <button class="e">3</button>
+                    <div class="practice-learn-text">
+                        <h3>Civil Litigation</h3>
+                        <p class="d">We will typically handle any litigation, or lawsuit, that is non-criminal. Therefore, anything from a landlord issue to a breach of contract is dealt with extreme care by us.</p>
+                    </div>
+                </div>
+                <div class="practice-learn-box">
+                    <button class="e">4</button>
+                    <div class="practice-learn-text">
+                        <h3>Family Law</h3>
+                        <p class="d">We are experts on family issues too. Our lawyers handle things like divorce, custody battles, prenuptial agreements, and other issues surrounding marriage and children.</p>
+                    </div>
+                </div>
+
+                <div class="practice-learn-box">
+                    <button class="e">5</button>
+                    <div class="practice-learn-text">
+                        <h3>Environmental law</h3>
+                        <p class="d">We are committed to providing world-class environmental litigation, compliance, and transactional services to businesses, and personalized to each client’s needs.</p>
+                    </div>
+                </div>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div id="practice-area">
+                <button class="a">Practice areas</button>
+                <h1 class="b">Our Lawyers Offer</h1>
+                <h2 class="c">Top-Tier, Full-Service Counseling</h2>
+                <h1 class="b">Across Many Core Fields.</h1>
+                <p class="d">When complex legal disputes arise, Attorney team protecting the interests that are most important to <strong>our clients.</strong> Our dedicated practice covers <strong>every aspect of common law</strong> and <strong>statutory law</strong> from pre-discovery to appeal.</p>
+                <br>
+                <p class="d">Our lawyers have accomplished with the <strong>advanced legal knowledge</strong> and legal insight necessary to prosecute the most challenging cases and regulatory issues.</p>
+                <div class="practice-bg"></div>
+            </div>
+        </div>
+        <div id="result">
+            <button class="a">Recent results</button>
+            <div class="title">
+                <h1 class="b heading-underline heading-underline-1">Have A Look At Our<span class="c"> Recent Cases & Wins</span></h1>
+            </div>
+            <div id="result-container">
+                <div class="result-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <h1 class="result-h1">Car Accident At New York City With A Mini Van</h1>
+                    <span class="result-won">$12,000</span><span class="result-date">january,2019</span>
+                </div>
+                <div class="result-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <h2 class="result-h2">False Criminal Charge Reduced</h2>
+                    <p class="d">“Recently, a college student found himself in the unsettling position of being charged with possession of a fraudulent driver’s license and ended with a police officer requesting to see his identification. The man knew that this type of conviction...”</p>
+                    <button>Read More</button>
+                </div>
+                <div class="result-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <h1 class="result-h1">Divorce Case For The Custody Of Children</h1>
+                    <span class="result-won">$1,56,000</span><span class="result-date">October,2018</span>
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="banner-text">
+                <span>Need Consultancy For</span>
+                <span>Your Buissness?</span>
+                <button class="btn">Call Us Now</button>
+                <span>its free of charge*</span>
+            </div>
+        </div>
+        <div id="team">
+            <button class="a">Our team</button>
+            <div class="title">
+                <h1 class="b heading-underline heading-underline-1">Meet Our<span class="c">Attorneys & Staffs</span></h1>
+            </div>
+            <div id="team-container">
+                <div class="team-box">
+                    <div class="team-img">
+                        <img src="img/member-8.png" alt="member8">
+                    </div>
+                    <div class="team-text">
+                        <h5>DAVE IVAN</h5>
+                        <button>junior consultant</button>
+                        <p>The standards and passion we set for ourselves in being the David against Goliath in these intense endeavors follows through to all our client matters.</p>
+                        <div class="team-social">
+                            <i class="fab fa-twitter"></i><i class="fab fa-invision"></i><i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-box">
+                    <div class="team-img">
+                        <img src="img/member-9.png" alt="member9">
+                    </div>
+                    <div class="team-text">
+                        <h5>CAMILA CABELLO</h5>
+                        <button>camila cabello</button>
+                        <p class="d">While we are a general practice, we limit our focus to areas where we have gained particular and pertinent experience over the years in past. good luck for you</p>
+                        <div class="team-social">
+                            <i class="fab fa-twitter"></i><i class="fab fa-invision"></i><i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="testimonial">
+            <button class="a">Testimonials</button>
+            <div class="title">
+                <h1 class="b heading-underline heading-underline-1"><span class="c">Our Clients</span> Are Our Biggest <span class="c">Fans</span></h1>
+            </div>
+            <div id="testimonial-container">
+                <div class="slider2">
+                    <ul class="panel2">
+                        <li>
+                            <div class="testimonial-box">
+                                <div class="testimonial-image testimonial-image4">
+                                    <img src="img/Asset-6.png" alt="asset6" class="testimonial-image1">
+                                </div>
+                                <div class="testimonial-text">
+                                    <img src="img/testimonial-3.png" alt="paypal" width="145" height="40">
+                                    <img src="img/left-quotes-sign.svg" alt="quotes" width="30" height="30">
+                                    <p class="d">I've never used a theme as versatile and flexible as Raven. It's my go to for building landing sites on almost any project.check them and leave your comments.</p>
+                                    <h3>― SCOT EASTWOOD</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="testimonial-box">
+                                <div class="testimonial-image testimonial-image5">
+                                    <img src="img/Asset-6.png" alt="asset6" class="testimonial-image2">
+                                </div>
+                                <div class="testimonial-text">
+                                    <img src="img/testimonial-1.png" alt="paypal" width="95" height="40">
+                                    <img src="img/left-quotes-sign.svg" alt="quotes" width="30" height="30">
+                                    <p class="d">I've never used a theme as versatile and flexible as Raven. It's my go to for building landing sites on almost any project.check them and leave your comments.</p>
+                                    <h3>― SCOT EASTWOOD</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="testimonial-box">
+                                <div class="testimonial-image testimonial-image4">
+                                    <img src="img/Asset-6.png" alt="asset6" class="testimonial-image1">
+                                </div>
+                                <div class="testimonial-text">
+                                    <img src="img/testimonial-3.png" alt="paypal" width="145" height="40">
+                                    <img src="img/left-quotes-sign.svg" alt="quotes" width="30" height="30">
+                                    <p class="d">I've never used a theme as versatile and flexible as Raven. It's my go to for building landing sites on almost any project.check them and leave your comments.</p>
+                                    <h3>― SCOT EASTWOOD</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="testimonial-box">
+                                <div class="testimonial-image  testimonial-image6">
+                                    <img src="img/Asset-6.png" alt="asset6" class="testimonial-image3">
+                                </div>
+                                <div class="testimonial-text">
+                                    <img src="img/testimonial-2.png" alt="paypal" width="134" height="40">
+                                    <img src="img/left-quotes-sign.svg" alt="quotes" width="30" height="30">
+                                    <p class="d">I've never used a theme as versatile and flexible as Raven. It's my go to for building landing sites on almost any project.check them and leave your comments.</p>
+                                    <h3>― SCOT EASTWOOD</h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="prev2"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next2"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="blog">
+            <div id="blog-container">
+                <div class="blog-box">
+                    <button class="a">Blogs</button>
+                    <h1 class="b">Read Our Latest</h1>
+                    <h2 class="c">News & Blogs</h2>
+                    <p class="d blog-text">Our happiness is in sharing our journey and experiences with you through our articles and blog posts. Feel free to check them and leave your comments</p>
+                </div>
+                <div class="blog-box" style="cursor: pointer;" onclick="location.href='#';">
+                </div>
+                <div class="blog-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <p class="blog-date">February 14, 2019</p>
+                    <h3 class="color-white">Four things to know before filing a PIL in the court</h3>
+                    <h4 class="blog-name"><i>-Sean Penn</i></h4>
+                    <span class="blog-tag"><a href="#">#Court,</a></span><span class="blog-tag"><a href="#"> #PIL</a></span>
+                </div>
+                <div class="blog-box" style="cursor: pointer;" onclick="location.href='#';">
+                </div>
+                <div class="blog-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <p class="blog-date">February 14, 2019</p>
+                    <h3 class="color-white">Five steps to choosing the best lawyer for your legal needs.</h3>
+                    <h4 class="blog-name"><i>-Sean Penn</i></h4>
+                    <span class="blog-tag"><a href="#">#Divorce,</a></span><span class="blog-tag"><a href="#"> #Custody</a></span>
+                </div>
+                <div class="blog-box blog-text-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <p class="blog-date">April 29, 2018</p>
+                    <h3 class="color-585e6e">Choosing the right car accident attorney can be tricky, until...</h3>
+                    <h4 class="blog-name color-babfcc"><i>-David Soulman</i></h4>
+                    <span class="color-767c8c">As personal injury lawyers for personal injury and car accident victims, we make it our goal to ensure ...</span>
+                </div>
+                <div class="blog-box" style="cursor: pointer;" onclick="location.href='#';"></div>
+                <div class="blog-box blog-text-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <p class="blog-date">April 29, 2018</p>
+                    <h3 class="color-585e6e">What should you know before fighting for your.</h3>
+                    <h4 class="blog-name color-babfcc"><i>-David Soulman</i></h4>
+                    <span class="color-767c8c">Engaging in a custody battle is rarely worth the pain and the price you will pay. It will drain your bank account...</span>
+                </div>
+                <div class="blog-box" style="cursor: pointer;" onclick="location.href='#';"></div>
+                <div class="blog-box blog-text-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <p class="blog-date">April 29, 2018</p>
+                    <h3 class="color-585e6e">What should you know before fighting for your.</h3>
+                    <h4 class="blog-name color-babfcc"><i>-David Soulman</i></h4>
+                    <span class="color-767c8c">Engaging in a custody battle is rarely worth the pain and the price you will pay. It will drain your bank account...</span>
+                </div>
+                <div class="blog-box blog-text-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <p class="blog-date">March 23, 2019</p>
+                    <h3 class="color-585e6e">How claim your sports health insurance & win it.</h3>
+                    <h4 class="blog-name color-babfcc"><i>-Scot eastwood</i></h4>
+                    <span class="color-767c8c">Private Health Insurance ultimately gives you peace of mind, designed to meet the costs of the private ...</span>
+                </div>
+            </div>
+        </div>
+        <div id="banner-2">
+            <h2>Want To Read More Of</h2>
+            <h3>Our Articles?</h3>
+            <button class="btn">Click Here</button>
+        </div>
+        <div id="faq">
+            <button class="a">FAQ</button>
+            <div class="title">
+                <h1 class="b heading-underline heading-underline-1">How Can We<span class="c"> Help You?</span></h1>
+            </div>
+            <form class="search-container">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <input type="text" id="search-bar" placeholder="Describe your issue">
+            </form>
+            <table class=" accordion-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            How can I determine if your law firm is the right law firm for me?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Our firm offers free, no-obligation consultations where we will review your case and outline the legal options available to you. You can contact us to schedule your free case evaluation by calling (888) 888-9285.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Who will be handling my case?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            When you hire our firm, an experienced attorney will guide you through every step of the legal process. We pride ourselves on being attentive to the needs of our clients and are here for you 24/7/365.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            What size cases do you handle?
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Our law firm handles cases of all sizes, from simple to complex. We are experienced trial lawyers with the knowledge and resources to represent injury victims in all types of accident cases. Our attorneys are dedicated to obtaining justice for clients from all walks of life regardless of how large or small the matter.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            What questions will be asked during my deposition?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.</p>
+                            <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Will the information I share with you be confidential?
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Yes. Because your communications with us are privileged, it is important that you make full disclosure of all pertinent facts of your personal injury claim (such as prior injuries), so that we can fully evaluate your case.</p>
+                            <p>The information you share with us is protected by the attorney-client privilege and will remain confidential. This protection applies even when our legal representation ends or if you do not retain our firm.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Who brings a claim on behalf of children that are hurt?
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.</p>
+                            <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            What damages am I entitled to recover?
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>This depends on the type of case and the damages that have been sustained. If you have suffered injury and require medical treatment, past and future medical bills are recoverable, as are all past and future lost wages. You can also recover “general damages,” which include pain and suffering, loss of enjoyment of life, emotional distress, and inconvenience associated with the injury</p>
+                            <p>In <a href="#">automobile collision</a> cases, our clients are also entitled to recover the damage to their vehicle, as well as the “loss of use” of that vehicle for the time our client was without the use because it was damaged.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="learn-more">
+            <div class="title">
+                <h1 class="b">Learn More<span class="c"> From Our Resources</span></h1>
+            </div>
+            <div id="learn-more-container">
+                <div class="learn-more-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <h5>Watch help videos</h5>
+                    <p>Browse our video library for helpful tips, step-by-step tutorials description.</p>
+                </div>
+                <div class="learn-more-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <h5>Read help Articles</h5>
+                    <p>Browse our video library for helpful tips, step-by-step tutorials description.</p>
+                </div>
+            </div>
+        </div>
+        <div id="banner-3">
+            <div class="b3-text">
+                <p>Have A Question? <strong>Ask Us </strong>Anything!</p>
+                <p>Contact us and we'll get back to<br />you as soon as possible.</p>
+                <button class="btn">Submit A Request</button>
+            </div>
+        </div>
+        <div id="pricing">
+            <div id="pricing-container">
+                <div class="pricing-box">
+                    <button class="a">Pricing</button>
+                    <h2 class="c">No Additional Costs.</h2>
+                    <h1 class="b">Pay For What You Use.</h1>
+                    <p class="d per">Choose the most suitable service for your needs at a reasonable price. Don’t get stalled by contracts, capacity planning, or price modeling.</p>
+                    <p class="d">Pay <strong>annually</strong> and get <strong>2 months free*</strong></p>
+                </div>
+                <div class="pricing-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <h3>Regular<span>Plan</span></h3>
+                    <p class="starting">starting at</p>
+                    <button class="per-month">
+                        <strong>$47</strong> <span>Per Month</span>
+                    </button>
+                    <ul>
+                        <li><span class="fa fa-circle text-success color-00c9a7" data-fa-transform="shrink-8"></span>Community support</li>
+                        <li><span class="fa fa-circle text-success color-00c9a7" data-fa-transform="shrink-8"></span>400+ pages</li>
+                        <li><span class="fa fa-circle text-success color-00c9a7" data-fa-transform="shrink-8"></span>100+ header variations</li>
+                        <li><span class="fa fa-circle text-success color-00c9a7" data-fa-transform="shrink-8"></span>20+ home page options</li>
+                        <li style="opacity:0.8;"><span class="fa fa-circle mr-2" data-fa-transform="shrink-8"></span>24/7 support</li>
+                        <li style="opacity:0.8;"><span class="fa fa-circle mr-2" data-fa-transform="shrink-8"></span>E-commerce</li>
+                        <li style="opacity:0.8;"><span class="fa fa-circle mr-2" data-fa-transform="shrink-8"></span>RTL support</li>
+                    </ul>
+                    <button class="btn" href="#">Start Now</button>
+                </div>
+                <div class="pricing-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <h3>Premium<span>Plan</span></h3>
+                    <p class="starting">starting at</p>
+                    <button class="per-month">
+                        <strong>$87</strong> <span>Per Month</span>
+                    </button>
+                    <ul>
+                        <li><span class="fa fa-circle text-success color-00c9a7" data-fa-transform="shrink-8"></span>Community support</li>
+                        <li><span class="fa fa-circle text-success color-00c9a7" data-fa-transform="shrink-8"></span>400+ pages</li>
+                        <li><span class="fa fa-circle text-success color-00c9a7" data-fa-transform="shrink-8"></span>100+ header variations</li>
+                        <li><span class="fa fa-circle text-success color-00c9a7" data-fa-transform="shrink-8"></span>20+ home page options</li>
+                        <li><span class="fa fa-circle color-00c9a7" data-fa-transform="shrink-8"></span>24/7 support</li>
+                        <li><span class="fa fa-circle color-00c9a7" data-fa-transform="shrink-8"></span>E-commerce</li>
+                        <li><span class="fa fa-circle color-00c9a7" data-fa-transform="shrink-8"></span>RTL support</li>
+                    </ul>
+                    <button class="btn" href="#">Start Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="Words-container">
+                <form id="Words-contact" action="" method="post">
+                    <span>Send</span><span>Your Words</span>
+                    <p>Your Name*</p>
+                    <fieldset>
+                        <input placeholder="" type="text" tabindex="1" required>
+                    </fieldset>
+                    <p>Your Name*</p>
+                    <fieldset>
+                        <input placeholder="" type="email" tabindex="2" required>
+                    </fieldset>
+                    <p>Your message*</p>
+                    <fieldset>
+                        <textarea placeholder="" tabindex="5" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div id="contact-text">
+                <button class="a">Contacts</button>
+                <h1>We Will Love To Hear From You. Feel Free To <span>Leave Us Some Words.</span></h1>
+                <div class="contact-address">
+                    <h3>Our address</h3>
+                    <p>contact_us@raven.com</p>
+                    <p>+550-222-96-2313</p>
+                    <p>1388 Argonne Street, New Castle, Delaware</p>
+                </div>
+                <h4>Follow Us On <span>Social Media</span></h4>
+                <p style="color:#767c8c; font-size:14px; width:55%;">We are active on various social media platforms. Like, share and follow to get updates.</p>
+                <div class="team-social2">
+                    <i class="fab fa-twitter"></i><i class="fab fa-invision"></i><i class="fab fa-instagram"></i><i class="fab fa-google-plus-g"></i>
+                </div>
+            </div>
+        </div>
+        <div id="map-title"><span>Find Us On</span><span>The Map</span>
+            <div id="map"></div>
+        </div>
+        <div id="gallery">
+            <button class="a">Our gallery</button>
+            <div class="title">
+                <h1 class="b heading-underline heading-underline-1">Life At Raven Is<span class="c"> Easy And Simple</span></h1>
+            </div>
+            <div id="gallery-container">
+                <div class="gallery-box" style="cursor: pointer;" onclick="location.href='#';"></div>
+                <div class="gallery-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <h4>Tour From Last Year At Mexico</h4>
+                    <p>Photo Album</p>
+                    <img src="img/g-3.png" alt="mexico1" width="120px" height="120px">
+                    <img src="img/g-2.png" alt="mexico1" width="120px" height="120px">
+                </div>
+                <div class="gallery-box" style="cursor: pointer;" onclick="location.href='#';"></div>
+                <div class="gallery-box" style="cursor: pointer;" onclick="location.href='#';"></div>
+                <div class="gallery-box" style="cursor: pointer;" onclick="location.href='#';"></div>
+                <div class="gallery-box" style="cursor: pointer;" onclick="location.href='#';"></div>
+                <div class="gallery-box" style="cursor: pointer;" onclick="location.href='#';">
+                    <h4>Tour From Last Year At Mexico</h4>
+                    <p>Photo Album</p>
+                    <img src="img/g-6.png" alt="mexico1" width="120px" height="120px">
+                    <img src="img/g-7.png" alt="mexico1" width="120px" height="120px">
+                </div>
+                <div class="gallery-box" style="cursor: pointer;" onclick="location.href='#';"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="banner-4">
+            <h4>Want To Join Our Team ? <span>We Are Hiring!</span><span> Send Your CV Now!</span></h4>
+        </div>
+        <div id="footer-container">
+            <ul class="footer-nav">
+                <li>About</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+            <ul class="footer-nav">
+                <li>Account</li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">My Task</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+            <ul class="footer-nav">
+                <li>Resources</li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Recognition</a></li>
+            </ul>
+            <div id="latest-news">
+                <h4>Get latest news in your box!</h4>
+                <p>Get Special Offers & Deals. We Never Spam.</p>
+                <div class="subscride">
+                    <input type="text" name="email" placeholder="Your Email">
+                    <button type="submit" class="btn subscride">
+                        Subscride
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer-logo">
+            <a href="#"><img src="img/raven-logo.svg"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

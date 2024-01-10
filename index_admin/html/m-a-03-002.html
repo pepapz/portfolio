@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MyOwnItem</title>
+
+	<link rel="stylesheet" type="text/css" href="../static/css/font.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css" media="all">
+
+	<link rel="stylesheet" type="text/css" href="../static/vendor/fontawesome/css/all.min.css" media="all">
+
+	<script type="text/javascript" src="../static/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="../static/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../static/vendor/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../static/js/common.js"></script>
+</head>
+
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- header -->
+		<header class="header">
+			<div class="container-fluid">
+				<div class="left">
+					<h2 class="h2">Contents</h2>
+				</div>
+				<div class="right">
+					<div class="top-nav">
+						<span class="top-nav__item" >Admin</span>
+						<a href="./m-a-01-001.html" class="top-nav__item link-dark" >Log Out</a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+		<!-- //header -->
+
+		<!-- fullmenu -->
+		<nav class="fullmenu">
+			<h1 class="logo">
+				<a href="./m-a-02-001.html">MOI</a>
+			</h1>
+
+			<!--**메뉴 영역 시작-->
+			<ul class="lnb_list">
+				<li id="dashboard"><a href="./m-a-02-001.html">Dashboard</a></li>
+				<li id="contents" class="on"><a href="./m-a-03-001.html">Contents</a></li>
+				<li id="trade"><a href="./m-a-04-001.html">Trade</a></li>
+				<li id="members"><a href="./m-a-05-001.html">Members</a></li>
+				<li id="popup_banner"><a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Pop Up/Banner</a></li>
+				<li class="collapse" id="collapseExample">
+					<ul id="popup_bannerList">
+						<li id="popup"><a href="./m-a-06-001.html">Pop Up</a></li>
+						<li id="banner"><a href="./m-a-06-002.html">Banner</a></li>
+					</ul>
+				</li>
+				<li id="event"><a href="./m-a-07-001.html">Event</a></li>
+				<li id="faq"><a href="./m-a-08-001.html">FAQ</a></li>
+			</ul>
+			<input type="hidden" value="dashboard" id="leftSelect">
+		</nav>
+		<!-- //fullmenu -->
+
+		<!-- contents -->
+		<div class="contents">
+			<article class="row g-3">
+				<div class="col-12">
+					<section class="sheet py-3">
+						<span class="me-2">Exposure : </span>
+						<label class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="MA07004" checked />
+							<span class="form-check-label">Yes</span>
+						</label>
+						<label class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="MA07004" />
+							<span class="form-check-label">No</span>
+						</label>
+					</section>
+				</div>
+						
+				<div class="col-4">
+					<section class="sheet">
+						<div class="row g-3">
+							<div class="col-12">
+								<div class="ratio ratio-1x1">
+									<img src="../static/img/common/960x960.png">
+								  </div>
+							</div>
+
+							<div class="col-12">
+								<span class="h5">{Contents Title}</span>
+							</div>
+							<div class="col-4">
+								<span>Creator</span>
+							</div>
+							<div class="col-8">
+								<span>{Creator Name}</span>
+							</div>
+							<div class="col-4">
+								<span>Owner</span>
+							</div>
+							<div class="col-8">
+								<span>{Owner Name}</span>
+							</div>
+							<div class="col-4">
+								<span>Registered Date</span>
+							</div>
+							<div class="col-8">
+								<span>YYYY. MM. DD.</span>
+							</div>
+							<div class="col-12">
+								<p class="mb-0">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</div>
+						</div>
+						<div class="btns__block mt-3">
+							<a href="./m-a-03-003.html" class="btn btn-info">EDIT</a>
+						</div>
+					</section>
+				</div>
+
+				<div class="col-8">
+					<section class="sheet">
+						
+						<p class="h5">Trading History</p>
+
+						<div class="title__block mt-3">
+							<span>Total : <span>5</span></span>
+							<div class="center flex-fill">
+							</div>
+							<div class="right flex-grow-0">
+								<span>Order by : </span>
+								<select class="form-select form-select-inline ms-3">
+									<option>Newest</option>
+									<option>Oldest</option>
+								</select>
+								<span class="ms-3">Count per Page : </span>
+								<select class="form-select form-select-inline ms-3">
+									<option>5</option>
+									<option>10</option>
+									<option>20</option>
+									<option>50</option>
+									<option>100</option>
+									<option>200</option>
+								</select>
+							</div>
+						</div>
+						<table class="table-dataset">
+							<thead>
+								<tr>
+									<th>EVENT</th>
+									<th>PRICE</th>
+									<th>FROM</th>
+									<th>TO</th>
+									<th>DATE</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Transfer</td>
+									<td>MOI 0000</td>
+									<td>{Seller Name}</td>
+									<td>{Buyer Name}</td>
+									<td>YYYY. MM. DD.</td>
+								</tr>
+								<tr>
+									<td>Transfer</td>
+									<td>MOI 0000</td>
+									<td>{Seller Name}</td>
+									<td>{Buyer Name}</td>
+									<td>YYYY. MM. DD.</td>
+								</tr>
+								<tr>
+									<td>Transfer</td>
+									<td>MOI 0000</td>
+									<td>{Seller Name}</td>
+									<td>{Buyer Name}</td>
+									<td>YYYY. MM. DD.</td>
+								</tr>
+								<tr>
+									<td>Transfer</td>
+									<td>MOI 0000</td>
+									<td>{Seller Name}</td>
+									<td>{Buyer Name}</td>
+									<td>YYYY. MM. DD.</td>
+								</tr>
+								<tr>
+									<td>Created</td>
+									<td></td>
+									<td>{Creator Name}</td>
+									<td></td>
+									<td>YYYY. MM. DD.</td>
+								</tr>
+							</tbody>
+						</table>
+						<nav class="mt-5">
+							<ul class="pagination justify-content-center">
+								<li class="page-item disabled">
+									<a class="page-link" href="#" tabindex="-1" aria-disabled="true">&lt;</a>
+								</li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+								<li class="page-item"><a class="page-link" href="#">6</a></li>
+								<li class="page-item"><a class="page-link" href="#">7</a></li>
+								<li class="page-item"><a class="page-link" href="#">8</a></li>
+								<li class="page-item"><a class="page-link" href="#">9</a></li>
+								<li class="page-item"><a class="page-link" href="#">10</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#">&gt;</a>
+								</li>
+							</ul>
+						</nav>
+					</section>
+
+					
+				</div>
+			</article>
+		</div>
+		<!-- //contents -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<footer id="footer">
+				<div class="container-fluid">
+					Copyright ⓒ My. All Rights Reserved.
+				</div>
+			</footer>
+		</footer>
+		<!-- //footer -->
+
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

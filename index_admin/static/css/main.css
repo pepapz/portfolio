@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* 로그인 화면*/
+.login_bg {background:url('../img/main/main_bg1.png') left top no-repeat; width:100%; height:100%; background-size:cover; position:relative;min-height:100%; }
+.logo_box1 {border-radius:10px; border:solid 1px #333; box-shadow:4px 4px 8px 2px #6c6c6c; background:#fff; padding:30px; width:600px; margin-left:-300px; position:absolute; top:220px; left:50%; }
+.logo_box1 input {width:100%; height:28px; line-height:28px; border:solid 1px #efefef; }
+.al365s {margin-bottom:20px;}
+.al365s span {text-align:center; display:block; margin:5px 0 }
+.logo_box1 li:first-child input {margin-bottom:20px;}
+.login_area {overflow:hidden;display:flex; justify-condent:space-between; padding:20px 0px; text-align:center;}
+.login_area li {width:33%;}

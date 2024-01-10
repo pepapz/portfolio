@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>이기적 유전자 | 밀리의 서재</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script src="js/subbook.js"></script>
+    <script src="js/re.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header-top">
+            <div class="header-inner">
+                <header>
+                    <div id="logo">
+                        <a href="main.html"> <img src="img/millie-logo.3884f0c52e69f1f7322c2fd4778f4830.png" alt="logo"> </a>
+                    </div>
+                    <ul class="category">
+                        <li><a href="#">투데이</a></li>
+                        <li><a href="#">검색</a></li>
+                        <li><a href="#">피드</a></li>
+                        <li><a href="#">내서재</a></li>
+                        <li><a href="#">관리</a></li>
+                    </ul>
+                    <ul class="user-menu">
+                        <li class="search">
+                            <a href="#" class="search-icon"></a>
+                        </li>
+                        <li class="alarm">
+                            <a href="#" class="alarm-icon"></a>
+                        </li>
+                        <li><a href="#" class="join">로그아웃</a></li>
+                    </ul>
+                </header>
+            </div>
+            <div class="home-tab">
+                <div class="home-tab-inner">
+                    <ul class="home-tab-list">
+                        <li>
+                            <button><i class="fas fa-align-justify"></i></button>
+                        </li>
+                        <li>
+                            <button>트렌드</button>
+                        </li>
+                        <li>
+                            <button>라이프</button>
+                        </li>
+                        <li>
+                            <button>지적교양</button>
+                        </li>
+                        <li>
+                            <button>소설</button>
+                        </li>
+                        <li>
+                            <button>장르 ・ 만화</button>
+                        </li>
+                    </ul>
+                    <div class="home-tab-bar"></div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="book-detail">
+                <div class="book-content">
+                    <div class="book-container">
+                        <div class="book-wrap1">
+                            <div class="thumnail">
+                                <div class="inner"> <img src="img/538ef91a7ed34194908a6a68ae86095c.jpg" alt="image"> </div>
+                            </div>
+                            <div class="cover-data">
+                                <div class="book-type">
+                                    <button class="audiobook">오디오북</button>
+                                    <button class="ebook on">전자책</button>
+                                </div>
+                                <div class="meta-data">
+                                    <p class="book-name"></p>
+                                    <p class="author"></p>
+                                </div>
+                                <div class="book-data">
+                                    <div class="read-together">
+                                        <a class="memlist">
+                                            <div class="images">
+                                                <p class=""><span style="background-image: url(img/14c7b659c9af77b3f0bc3601bbab9878.png);"></span></p>
+                                                <p class=""><span style="background-image: url(img/ca8959d2424ae1abf3415779d34f3632.png);"></span></p>
+                                                <p class=""><span style="background-image: url(img/8ec6c8c4ea263bc67addaba38fc244f1.png);"></span></p>
+                                            </div>
+                                            <p class="text">함께 읽는 사람</p> <strong class="number">10만 명+</strong>
+                                        </a>
+                                    </div>
+                                    <div class="review">
+                                        <a class="review-move"> <img src="img/review-mark.ffaa0d9de623bd5c8626faf1f7448f58.png" alt="image">
+                                            <p class="text">한 줄 리뷰</p> <strong class="number">37개</strong>
+                                        </a>
+                                    </div>
+                                    <div class="post">
+                                        <a class="post-move"> <img src="img/post-mark.e6660d3d2be8d740e6accf5f63489487.png" alt="image">
+                                            <p class="text">포스터</p> <strong class="number">17개</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-wrap2">
+                            <div class="button-area">
+                                <ul class="button-list">
+                                    <li class="shelf">
+                                        <button class="libbtn">내서재에 담기</button>
+                                    </li>
+                                    <li class="down">
+                                        <button class="downbtn">다운로드</button>
+                                    </li>
+                                    <li class="favorite">
+                                        <button class="favbtn">My Favorite</button>
+                                    </li>
+                                    <li class="share">
+                                        <button class="sharebtn">공유하기</button>
+                                    </li>
+                                    <li class="posts">
+                                        <button class="postbtn">포스트 쓰기</button>
+                                    </li>
+                                </ul>
+                                <div class="button2">
+                                    <div class="btninner2">
+                                        <button class="readbtn2"><span>바로 읽기</span></button>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <div class="btninner">
+                                        <button class="readbtn"><span>구매하기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-history">
+                        <ul>
+                            <li class="report"> <strong class="history-text">밀리 독서 리포트 2020에 소개된 책</strong> </li>
+                            <li class="bestseller">
+                                <div class="history-text">과학 분야 주간 베스트 도서</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="book-info">
+                        <div class="subtitle section">
+                            <h3 class="book-info-title">VIDEO</h3>
+                            <div class="youtube">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/-gyVyEeq7MQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="subtitle section">
+                            <h3 class="book-info-title">부제</h3>
+                            <p class="desc">40주년 기념판</p>
+                        </div>
+                        <div class="introduction section">
+                            <h3 class="book-info-title">책소개</h3>
+                            <div class="text-area">
+                                <p>
+                                    <br>
+                                    <br> 세계적 베스트셀러, 과학을 넘어선 우리 시대의 고전, 『이기적 유전자』의 40주년 기념판. 진화론의 새로운 패러다임을 제시한 이 책은 다윈의 ‘적자생존과 자연선택’이라는 개념을 유전자 단위로 끌어내려 진화를 설명한다.
+                                    <br>
+                                    <br> 2013년 영국의 정치평론지 『프로스펙트』지가 독자들의 투표로 선정하는 ‘세계 최고의 지성’ 1위에 오른 바 있는 도킨스는 일찍이 촉망받는 젊은 과학자로 간결한 문체와 생생한 비유, 논리적인 전개를 갖춘 글로 능력을 인정받아 왔다. 도킨스는 자신의 동물행동학 연구를 진화의 역사에서 유전자가 차지하는 중심적 역할에 대한 좀 더 넓은 이론적 맥락과 연결시키기 시작했는데, 그 결과가 바로 『이기적 유전자』다.
+                                    <br>
+                                    <br> 이번 40주년 기념판에 새롭게 수록된 에필로그에서 도킨스는 여전히 ‘이기적 유전자’라는 개념이 갖고 있는 지속적인 타당성을 이야기하며 이 책이 전하는 메시지를 되새긴다. 새로운 에필로그를 수록하는 것은 물론 새로운 디자인과 휴대하기 좋은 판형으로 갈아입은 40주년 기념판을 통해 독자들은 『이기적 유전자』가 주는 울림을 더욱더 선명하게 느낄 수 있을 것이다.
+                                </p>
+                            </div>
+                            <div class="book-info-detail">
+                                <ul class="slide-wrapper">
+                                    <li class="slide-item">
+                                        <p>카테고리</p> <strong><a href="#">과학</a></strong>
+                                    </li>
+                                    <li class="slide-item line">
+                                        <p>페이지</p> <strong><a href="#">632P</a></strong>
+                                    </li>
+                                    <li class="slide-item line">
+                                        <p>용량</p> <strong><a href="#">2 MB</a></strong>
+                                    </li>
+                                    <li class="slide-item line">
+                                        <p>출판사</p> <strong><a href="#">을유문화사</a></strong>
+                                    </li>
+                                    <li class="slide-item line">
+                                        <p>종이책 출간일</p> <strong><a href="#">2018.10.20</a></strong>
+                                    </li>
+                                    <li class="slide-item line">
+                                        <p>전자책 출간일</p> <strong><a href="#">2019.02.14</a></strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section accordion">
+                            <h3 class="book-table-title "><button class="bookcon-more">목차</button></h3>
+                            <div class="book-table">
+                                <p> 옮긴이의 말
+                                    <br> 30주년 기념판 서문
+                                    <br> 개정판 서문
+                                    <br> 초판 권두사
+                                    <br> 초판 서문
+                                    <br>
+                                    <br> <b>1장. 사람은 왜 존재하는가? </b>
+                                    <br> 진화 ― 가장 근본적 질문에 대한 대답
+                                    <br> 이기주의와 이타주의
+                                    <br> 집단선택설
+                                    <br>
+                                    <br> <b>2장. 자기 복제자 </b>
+                                    <br> 안정을 향하여
+                                    <br> 생명의 기원과 자기 복제자
+                                    <br>
+                                    <br> <b>3장. 불멸의 코일 </b>
+                                    <br> 유전자란 무엇인가
+                                    <br> 유성생식과 유전자의 정의
+                                    <br> 불멸의 유전자
+                                    <br> 노화 이론
+                                    <br>
+                                    <br> <b>4장. 유전자 기계 </b>
+                                    <br> 생존 기계의 시작
+                                    <br> 동물의 행동
+                                    <br> 시뮬레이션
+                                    <br> 의사소통
+                                    <br>
+                                    <br> <b>5장. 공격 ― 안정성과 이기적 기계 </b>
+                                    <br> 다른 생존 기계는 환경의 일부
+                                    <br> 게임 이론과 진화적으로 안정한 전략
+                                    <br> 비대칭적 싸움
+                                    <br>
+                                    <br> <b>6장. 유전자의 행동 방식 </b>
+                                    <br> 이기적 유전자와 이타주의
+                                    <br> 혈연선택
+                                    <br> 부모와 자식의 관계
+                                    <br>
+                                    <br> <b>7장. 가족계획 </b>
+                                    <br> 아이 낳기와 아이 키우기
+                                    <br> 개체 수 조절과 인구 문제
+                                    <br> 가족계획 이론
+                                    <br>
+                                    <br> <b>8장. 세대 간의 전쟁 </b>
+                                    <br> 가족 내부의 이해관계
+                                    <br> 갈등의 승자
+                                    <br>
+                                    <br> <b>9장. 암수의 전쟁 </b>
+                                    <br> 짝 간의 갈등
+                                    <br> 성의 전략
+                                    <br> 이기적인 기계 ― 누가 누구를 착취할 것인가?
+                                    <br> 암컷의 선택
+                                    <br> 암컷은 좋은 유전자를 찾는다
+                                    <br> 암수의 차이
+                                    <br> 인간에서의 성선택
+                                    <br>
+                                    <br> <b>10장. 내 등을 긁어 줘, 나는 네 등 위에 올라탈 테니 </b>
+                                    <br> 집단 형성이 주는 이익
+                                    <br> 사회성 곤충
+                                    <br> 협력의 진화
+                                    <br>
+                                    <br> <b>11장. 밈 ― 새로운 복제자 </b>
+                                    <br> 문화, 문화적 돌연변이
+                                    <br> ‘밈’과 그 진화
+                                    <br> 밈의 특성
+                                    <br>
+                                    <br> <b>12장. 마음씨 좋은 놈이 일등한다 </b>
+                                    <br> 마음씨 좋은 놈, 마음씨 나쁜 놈
+                                    <br> 죄수의 딜레마
+                                    <br> 영합 게임과 비영합 게임
+                                    <br>
+                                    <br> <b>13장. 유전자의 긴 팔 </b>
+                                    <br> 유전자냐 개체냐
+                                    <br> 기생자와 숙주
+                                    <br> 유전자냐 개체냐
+                                    <br>
+                                    <br> 40주년 기념판 에필로그
+                                    <br> 보주
+                                    <br> 참고 문헌
+                                    <br> 찾아보기
+                                    <br> 이 책에 대한 서평
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section accordion">
+                            <h3 class="book-table-title"><button class="bookcon-more">저자 소개</button></h3>
+                            <div class="profile">
+                                <div class="image" style="background-image:url(img/13046_1.jpg);"></div>
+                                <p class="name"><b>리처드 도킨스(Richard Dawkins)</b>
+                                    <br> 1941년 케냐 나이로비 출생, 영국 옥스퍼드 대학을 졸업했다. 2008년 옥스퍼드 대학의 ‘과학의 대중적 이해를 위한 찰스 시모니 석좌교수’에서 은퇴했고, 이후에도 뉴 칼리지의 펠로로 남아 있다. 왕립학회 회원이자 왕립문학원 회원이다. 왕립문학원상(1987), 왕립학회 마이클 패러데이 상(1990), 인간과학에서의 업적에 수여하는 국제 코스모스 상(1997), 키슬러 상(2001), 셰익스피어 상(2005), 과학에 대한 저술에 수여하는 루이스 토머스 상(2006), 영국 갤럭시 도서상 올해의 작가상(2007), 데슈너 상(2007), 과학의 대중적 이해를 위한 니렌버그 상(2009) 등 수많은 상과 명예학위를 받았다.
+                                    <br>
+                                    <br> 대표작인 ≪이기적 유전자≫는 1976년 출간 이후 30년 넘게 과학계를 떠들썩하게 한 세기의 문제작이며, 출간과 동시에 과학계와 종교계에 뜨거운 논쟁을 몰고 온 ≪만들어진 신≫(2006)은 신이 존재하지 않음을 과학적 논증을 통해 증명하면서, 그동안 종교의 잘못된 논리가 세계사에 남긴 수많은 폐단을 지적한 명저로 평가받고 있다.
+                                    <br>
+                                    <br> 그 밖의 대표작으로 ≪확장된 표현형≫(1982), ≪눈먼 시계공≫(1993), ≪에덴의 강≫(1995), ≪불가능의 산을 오르다≫(1996), ≪무지개를 풀며≫(1999), ≪악마의 사도≫(2003), ≪조상 이야기≫(2004), ≪지상 최대의 쇼≫(2009), ≪현실, 그 가슴 뛰는 마법≫(2011) 등이 있다.
+                                    <br>
+                                    <br> 2012년, 스리랑카에서 물고기를 연구하던 과학자들은 도킨스가 진화과학의 대중적 이해에 공헌한 바를 기려 새로운 어류 속명을 ‘도킨시아’라고 지었다. 2013년에는 &lt;프로스펙트&gt;지가 전 세계 100여 개국의 독자들을 대상으로 세계 최고 지성을 뽑은 투표에서 1위를 차지했다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="aladin">
+                            <p class="title">알라딘</p>
+                            <button class="aladin-popup">종이책 구매하기</button>
+                        </div>
+                    </div>
+                    <div class="review-container">
+                        <h3 class="review-info-title">
+                            <a href="#" class="review-title">한 줄 리뷰<span class="number">37</span></a>
+                        </h3>
+                        <ul class="review-list">
+                            <li>
+                                <div class="image" style="background-image: url(img/8ec6c8c4ea263bc67addaba38fc244f1.png)">
+                                    <a href="#" class="review-lib"></a>
+                                </div>
+                                <div class="info">
+                                    <p class="nickname">솔직한 창의력 대장</p> <span class="date">2020.03.17</span> <a class="review-text">
+                                        진화론에 대한 이해에 한발짝 더 다가가게 해준 책
+                                    </a>
+                                    <div class="review-set">
+                                        <p>이 리뷰가 마음에 드시나요?</p>
+                                        <button class="like"><span>24</span></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image" style="background-image: url(img/8ec6c8c4ea263bc67addaba38fc244f1.png)">
+                                    <a href="#" class="review-lib"></a>
+                                </div>
+                                <div class="info">
+                                    <p class="nickname">매력적인 주인공 </p> <span class="date">2020.03.17</span> <a class="review-text">
+                                        충격적이고 흥미롭다.
+                                    </a>
+                                    <div class="review-set">
+                                        <p>이 리뷰가 마음에 드시나요?</p>
+                                        <button class="like"><span>19</span></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image" style="background-image: url(img/8ec6c8c4ea263bc67addaba38fc244f1.png)">
+                                    <a href="#" class="review-lib"></a>
+                                </div>
+                                <div class="info">
+                                    <p class="nickname">강한 개척자</p> <span class="date">2020.03.17</span> <a class="review-text">
+                                        작가의 다른 작품도 읽고 싶어졌다.
+                                    </a>
+                                    <div class="review-set">
+                                        <p>이 리뷰가 마음에 드시나요?</p>
+                                        <button class="like"><span>11</span></button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="review-register">
+                            <div class="image" style="background-image: url(img/fff508ecc1d5afd7a150600704ac3ea0.png);"></div>
+                            <div class="register">
+                                <textarea placeholder="한 줄 리뷰를 남겨주세요" maxlength="50" class="reviewarea"></textarea>
+                                <button class="review-write">등록</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner">
+                        <a href="#" class="banner-inner"> <img src="img/601770e517706.jpg" alt="배너"></a>
+                    </div>
+                    <div class="relate-container">
+                        <h3 class="relate-title">다른 회원들이 함께 담은 책</h3>
+                        <div class="book-shelf">
+                            <div class="slide-container">
+                                <ul class="slide-wrap">
+                                    <li class="slide-item">
+                                        <div class="relate-books">
+                                            <a href="#" class="relate-book-image">
+                                                <div class="relate-thumnail">
+                                                    <div class="relate-thumnail-inner"> <img src="#" class="relate-img" alt="image"> </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="relate-data">
+                                                <div class="relate-metadata">
+                                                    <p class="relate-book-title"></p>
+                                                    <p class="relate-book-author"></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="slide-item">
+                                        <div class="relate-books">
+                                            <a href="#" class="relate-book-image">
+                                                <div class="relate-thumnail">
+                                                    <div class="relate-thumnail-inner"> <img src="#" class="relate-img" alt="image"> </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="relate-data">
+                                                <div class="relate-metadata">
+                                                    <p class="relate-book-title"></p>
+                                                    <p class="relate-book-author"></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="slide-item">
+                                        <div class="relate-books">
+                                            <a href="#" class="relate-book-image">
+                                                <div class="relate-thumnail">
+                                                    <div class="relate-thumnail-inner"> <img src="#" class="relate-img" alt="image"> </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="relate-data">
+                                                <div class="relate-metadata">
+                                                    <p class="relate-book-title"></p>
+                                                    <p class="relate-book-author"></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="slide-item">
+                                        <div class="relate-books">
+                                            <a href="#" class="relate-book-image">
+                                                <div class="relate-thumnail">
+                                                    <div class="relate-thumnail-inner"> <img src="#" class="relate-img" alt="image"> </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="relate-data">
+                                                <div class="relate-metadata">
+                                                    <p class="relate-book-title"></p>
+                                                    <p class="relate-book-author"></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="slide-item">
+                                        <div class="relate-books">
+                                            <a href="#" class="relate-book-image">
+                                                <div class="relate-thumnail">
+                                                    <div class="relate-thumnail-inner"> <img src="#" class="relate-img" alt="image"> </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="relate-data">
+                                                <div class="relate-metadata">
+                                                    <p class="relate-book-title"></p>
+                                                    <p class="relate-book-author"></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="slide-item">
+                                        <div class="relate-books">
+                                            <a href="#" class="relate-book-image">
+                                                <div class="relate-thumnail">
+                                                    <div class="relate-thumnail-inner"> <img src="#" class="relate-img" alt="image"> </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="relate-data">
+                                                <div class="relate-metadata">
+                                                    <p class="relate-book-title"></p>
+                                                    <p class="relate-book-author"></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="slide-item">
+                                        <div class="relate-books">
+                                            <a href="#" class="relate-book-image">
+                                                <div class="relate-thumnail">
+                                                    <div class="relate-thumnail-inner"> <img src="#" class="relate-img" alt="image"> </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="relate-data">
+                                                <div class="relate-metadata">
+                                                    <p class="relate-book-title"></p>
+                                                    <p class="relate-book-author"></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="aladin-desc">도서 DB 제공 알라딘 인터넷서점(www.aladin.co.kr)</p>
+                    <footer>
+                        <div class="footer-inner">
+                            <div class="footer-head">
+                                <h1>(주) 밀리의 서재</h1>
+                                <ul class="sns"></ul>
+                            </div>
+                            <button class="about-button">사업자 정보 펼쳐보기</button>
+                            <ul class="service">
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">환불신청</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">저작권/도서오류 신고</a></li>
+                                <li><a href="#">뷰어 다운로드</a></li>
+                                <li><a href="#">종료 예정 도서</a></li>
+                                <li><a href="#">B2B 문의</a></li>
+                                <li><a href="#">콘텐츠 제휴문의</a></li>
+                            </ul>
+                            <p class="copyright">Copyright © 2021 밀리의 서재 All Rights Reserved.</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

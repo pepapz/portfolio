@@ -1,0 +1,15 @@
+.search__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form-control {
+        width: 240px;
+        margin-right: 10px;
+    }
+    button {
+        & + button {
+            margin-left: 5px;
+        }
+    }
+}
+
