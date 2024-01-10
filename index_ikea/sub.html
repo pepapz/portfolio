@@ -4,9 +4,10 @@
 <head>
     <title>IKEA</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/common.css ">
     <link rel="stylesheet" href="css/sub.css ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
@@ -14,290 +15,269 @@
 </head>
 
 <body>
-    <header>
-        <div class="hd">
-            <nav>
+    <!--header-->
+    <header class="header">
+        <div class="logo">
+            <a href='./index.html'>
+                <img src="./img/logo.svg" alt="logo" />
+            </a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href='/index_ikea/sub'>Products</a>
+                </li>
+                <li>
+                    <a href='/index_ikea/sub'>Rooms</a>
+                </li>
+                <li>
+                    <a href='/index_ikea/sub'>New</a>
+                </li>
+                <li>
+                    <a href='/index_ikea/sub'>Ideas</a>
+                </li>
+                <li>
+                    <a href='/index_ikea/sub'>Offers</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="buttons">
+            <li>
+                <a href="#">
+                    <i class="fas fa-truck"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-heart"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="toggle">
+            <span class="toggle-btn" onclick="openNav()"><i class="fas fa-bars"></i></span>
+            <div class="toggle-nav" id="subNav">
+                <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"><i class="fas fa-times"></i></a>
                 <ul>
-                    <li><a href="#"><i class="fas fa-truck"></i></a></li>
-                    <li><a href="#"><i class="fas fa-user"></i></a></li>
-                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li>
+                        <a href='/index_ikea/sub'>Products</a>
+                    </li>
+                    <li>
+                        <a href='/index_ikea/sub'>Rooms</a>
+                    </li>
+                    <li>
+                        <a href='/index_ikea/sub'>New</a>
+                    </li>
+                    <li>
+                        <a href='/index_ikea/sub'>Ideas</a>
+                    </li>
+                    <li>
+                        <a href='/index_ikea/sub'>Offers</a>
+                    </li>
                 </ul>
-            </nav>
-            <div id="logo">
-                <a href="index.html"><img src="https://www.ikea.com/us/en/static/ikea-logo.f88b07ceb5a8c356b7a0fdcc9a563d63.svg" alt="로고"></a>
             </div>
-            <div class="category">
-                <nav class="nav nav--line bottom left">
-                    <ul class="menulist">
-                        <li>Products</li>
-                        <li><a href="#">Rooms</a></li>
-                        <li><a href="#">New</a></li>
-                        <li><a href="#">Ideas</a></li>
-                        <li><a href="#">Offers</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <form>
-                <input type="search">
-                <i class="fa fa-search"></i>
-            </form>
         </div>
     </header>
-    <main>
-        <div id="submenu">
-            <ul>
-                <li><a href="#">Products</a></li>
-                <li>></li>
-                <li><a href="#">Lighting</a></li>
-                <li>></li>
-                <li><a href="#">Lamps</a></li>
-                <li>></li>
-                <li><a href="#">Floor lamps</a></li>
-                <li>></li>
-                <li><a href="#">LERSTA Floor/reading lamp</a></li>
-            </ul>
-        </div>
-        <div id="productbox">
-            <div class="productimg">
-                <img src="img/product.webp" alt="product" id="cimg" class="w1">
-                <div class="productimgsub">
-                    <ul>
-                        <li><a href="#"><img src="img/product.webp" alt="productsub3" id="btn1"></a></li>
-                        <li><a href="#"><img src="img/RR.jfif" alt="productsub1" id="btn2"></a></li>
-                        <li><a href="#"><img src="img/productsub2.webp" alt="productsub2" id="btn3"></a></li>
-                    </ul>
+    <!--main-->
+    <main class="main">
+        <ul class="breadcrumb">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Floor lamps</a></li>
+        </ul>
+        <section class="product">
+            <article class="product-info">
+                <div class="product-info__img">
+                    <img src="img/product.webp" alt="product">
                 </div>
-            </div>
-            <div class="tablebox">
-                <table class="table1">
-                    <tr>
-                        <td class="td1" colspan="2">LERSTA</td>
-                    </tr>
-                    <tr>
-                        <td>Floor/reading lamp aluminium</td>
-                        <td class="td3">42.9</td>
-                    </tr>
-                    <tr>
-                        <td class="td4"><a href="#">★★★★★(29)</a></td>
-                    </tr>
-                    <tr>
-                        <td class="td5" colspan="2"><i class="fas fa-exclamation-circle"></i> Light bulb sold separately.</td>
-                    </tr>
-                    <tr>
-                        <td>Lamp shade Frame</td>
-                        <td>Steel, Powder coating</td>
-                    </tr>
-                    <tr>
-                        <td>Shade</td>
-                        <td>100% polyester</td>
-                    </tr>
-                    <tr>
-                        <td class="td6" colspan="2"><a href="#"><i class="fas fa-store-alt"></i> Check in-store stock</a></td>
-                    </tr>
-                </table>
-                <button>Add to cart</button>
-                <div class="with">
-                    <div class="with1">
-                        <h4>Goes well with</h4>
-                    </div>
-                    <div class="with2">
-                        <img src="img/with.webp" alt="withimg">
-                        <div class="withtext">
-                            <h3>RYET</h3>
-                            <p>LED bulb E26 470 lumen</p>
-                            <span>$2.5</span>
-                            <span>Add</span><input type="checkbox" name="ryet" value="ryet" style="width:22px; height:22px;">
-                        </div>
+                <div class="product-info__desc">
+                    <table class="table">
+                        <tr>
+                            <td class="name">LERSTA</td>
+                        </tr>
+                        <tr>
+                            <td class="desc">Floor/reading lamp aluminium</td>
+                            <td class="price">42.9</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">★★★★★(29)</a></td>
+                        </tr>
+                        <tr>
+                            <td class="notice"><i class="fas fa-exclamation-circle"></i> Light bulb sold separately.</td>
+                        </tr>
+                        <tr>
+                            <td>Lamp shade Frame :</td>
+                            <td>Steel, Powder coating</td>
+                        </tr>
+                        <tr>
+                            <td>Shade :</td>
+                            <td>100% polyester</td>
+                        </tr>
+                        <tr>
+                            <td class="store"><a href="#"><i class="fas fa-store-alt"></i> Check in-store stock</a></td>
+                        </tr>
+                    </table>
+                    <button class="btn-add">Add to cart</button>    
+                    <div class="with">
+                        <h4 class="tit">Goes well with</h4>
+                        <a href="#" class="with-item">
+                            <div class="with-item__img"><img src="img/with.webp" /></div>
+                            <div class="with-item__txt">
+                                <span class="name">RYET</span>
+                                <span class="desc">LED bulb E26 470 lumen</span>
+                                <span class="price">2.5</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <script>
-            btn1.onclick = function() {
-                cimg.src = "img/product.webp";
-            }
-            btn2.onclick = function() {
-                cimg.src = "img/RR.jfif";
-            }
-            btn3.onclick = function() {
-                cimg.src = "img/productsub2.webp";
-            }
-        </script>
-
-        <div id="show">
-            <h1>Similar products</h1>
-            <div class="sbox">
-                <img src="img/other1.webp" alt="other1">
-                <h4>LERSTA, Floor lamp</h4>
-                <p>$ 14.9</p>
-            </div>
-            <div class="sbox">
-                <img src="img/other2.jfif" alt="other2">
-                <h4>ARSTID, Floor lamp</h4>
-                <p>$ 32.9</p>
-            </div>
-            <div class="sbox">
-                <img src="img/other3.jfif" alt="other3">
-                <h4>RANARP, Floor lamp</h4>
-                <p>$ 29.9</p>
-            </div>
-            <div class="sbox">
-                <img src="img/other4.jfif" alt="other4">
-                <h4>ATERSKEN, Floor lamp</h4>
-                <p>$ 43.9</p>
-            </div>
-        </div>
-        <div class="productdetail">
-            <ul>
-                <li><a href="#">Product details</a></li>
-                <li><a href="#specline">Specification</a></li>
-                <li><a href="#reviewline">Reviews</a></li>
-            </ul>
-        </div>
-        <div class="asa">
-            <img src="img/P.png" alt="p">
-        </div>
-        <div class="detail">
-            <h3>Specification</h3>
-            <div id="specline"></div>
-            <table>
-                <tr>
-                    <th>Base plate</th>
-                    <td>Clear lacquer, Aluminium</td>
-                </tr>
-                <tr>
-                    <th>Base weight</th>
-                    <td>Polyethylene plastic</td>
-                </tr>
-                <tr>
-                    <th>Joint</th>
-                    <td>Steel</td>
-                </tr>
-                <tr>
-                    <th>Shade/ Tube</th>
-                    <td>Aluminium, Clear lacquer</td>
-                </tr>
-                <tr>
-                    <th>Packaging</th>
-                    <td>LERSTA</td>
-                </tr>
-                <tr>
-                    <th>Article no</th>
-                    <td>202.842.48</td>
-                </tr>
-                <tr>
-                    <th>Width</th>
-                    <td>26 cm</td>
-                </tr>
-                <tr>
-                    <th>Height</th>
-                    <td>14 cm</td>
-                </tr>
-                <tr>
-                    <th>Length</th>
-                    <td>59 cm</td>
-                </tr>
-                <tr>
-                    <th>Weight</th>
-                    <td>2.91 kg</td>
-                </tr>
-                <tr>
-                    <th>Certification</th>
-                    <td>Complied with KC safety requirement</td>
-                <tr>
-                    <th>Manufacturer</th>
-                    <td>IKEA of Sweden AB</td>
-                </tr>
-                <tr>
-                    <th>Manufacture Date</th>
-                    <td>Manufactured Date : Refer to product package surfacee.g) 1246=12(YY)46(WW)</td>
-                </tr>
-
-            </table>
-            <br>
-            <br>
-            <br>
-            <h3 class="reviews">Reviews</h3>
-            <div id="reviewline"></div>
-            <p>Average customer ratings</p>
-            <br>
-            <table>
-                <tr>
-                    <th>Overall</th>
-                    <td>★★★★★</td>
-                </tr>
-                <tr>
-                    <th>Ease of assembly/installation</th>
-                    <td>★★★★★</td>
-                </tr>
-                <tr>
-                    <th>Value for money</th>
-                    <td>★★★★★</td>
-                </tr>
-                <tr>
-                    <th>Product quality</th>
-                    <td>★★★★★</td>
-                </tr>
-                <tr>
-                    <th>Appearance</th>
-                    <td>★★★★★</td>
-                </tr>
-                <tr>
-                    <th>Works as expected</th>
-                    <td>★★★★★</td>
-                </tr>
-            </table>
-        </div>
-        <div id="show">
-            <h1>Others also viewed</h1>
-            <div class="sbox">
-                <img src="img/p5.jpg" alt="other5">
-                <h4>ARSTID, Floor lamp</h4>
-                <p>$ 40.99</p>
-            </div>
-            <div class="sbox">
-                <img src="img/p6.jpg" alt="other6">
-                <h4>FADO, Table lamp</h4>
-                <p>$ 18.99</p>
-            </div>
-            <div class="sbox">
-                <img src="img/p7.jpg" alt="other7">
-                <h4>YPPERLIG, LED table lamp</h4>
-                <p>$ 39.99</p>
-            </div>
-            <div class="sbox">
-                <img src="img/p8.jpg" alt="other8">
-                <h4>TERTIAL, Work lamp</h4>
-                <p>$ 18.99</p>
-            </div>
-        </div>
+            </article>
+            <article class="other">
+                <h1 class="tit">Similar products</h1>
+                <ul class="other-list">
+                    <li>
+                        <a href="#" class="other-item">
+                            <img src="img/other1.webp" />
+                            <span class="name">LERSTA, Floor lamp</span>
+                            <span class="price">$ 14.9</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="other-item">
+                            <img src="img/other2.jfif" />
+                            <span class="name">LERSTA, Floor lamp</span>
+                            <span class="price">$ 14.9</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="other-item">
+                            <img src="img/other3.jfif" />
+                            <span class="name">LERSTA, Floor lamp</span>
+                            <span class="price">$ 14.9</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="other-item">
+                            <img src="img/other4.jfif" />
+                            <span class="name">LERSTA, Floor lamp</span>
+                            <span class="price">$ 14.9</span>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article class="detail">
+                <ul class="detail__tabs">
+                    <li><a href="#">Product details</a></li>
+                    <li><a href="#specline">Specification</a></li>
+                    <li><a href="#reviewline">Reviews</a></li>
+                </ul>
+                <img src="img/detail.png" class="detail__img"/>
+                <div class="detail__spec">
+                    <h3 class="tit">Specification</h3>
+                    <table class="table">
+                        <tr>
+                            <th>Base plate :</th>
+                            <td>Clear lacquer, Aluminium</td>
+                        </tr>
+                        <tr>
+                            <th>Base weight :</th>
+                            <td>Polyethylene plastic</td>
+                        </tr>
+                        <tr>
+                            <th>Joint :</th>
+                            <td>Steel</td>
+                        </tr>
+                        <tr>
+                            <th>Shade/ Tube :</th>
+                            <td>Aluminium, Clear lacquer</td>
+                        </tr>
+                        <tr>
+                            <th>Packaging :</th>
+                            <td>LERSTA</td>
+                        </tr>
+                        <tr>
+                            <th>Article no :</th>
+                            <td>202.842.48</td>
+                        </tr>
+                        <tr>
+                            <th>Width :</th>
+                            <td>26 cm</td>
+                        </tr>
+                        <tr>
+                            <th>Height :</th>
+                            <td>14 cm</td>
+                        </tr>
+                        <tr>
+                            <th>Length :</th>
+                            <td>59 cm</td>
+                        </tr>
+                        <tr>
+                            <th>Weight :</th>
+                            <td>2.91 kg</td>
+                        </tr>
+                        <tr>
+                            <th>Certification :</th>
+                            <td>Complied with KC safety requirement</td>
+                        <tr>
+                            <th>Manufacturer :</th>
+                            <td>IKEA of Sweden AB</td>
+                        </tr>
+                        <tr>
+                            <th>Manufacture Date :</th>
+                            <td>Manufactured Date : Refer to product package surfacee.g) 1246=12(YY)46(WW)</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+            <article class="other">
+                <h1 class="tit">Others also viewed</h1>
+                <ul class="other-list">
+                    <li>
+                        <a href="#" class="other-item">
+                            <img src="img/product5.jpg" />
+                            <span class="name">ARSTID, Floor lamp</span>
+                            <span class="price">$ 40.99</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="other-item">
+                            <img src="img/product6.jpg" />
+                            <span class="name">FADO, Table lamp</span>
+                            <span class="price">$ 14.9</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="other-item">
+                            <img src="img/product7.jpg" />
+                            <span class="name">YPPERLIG, LED table lamp</span>
+                            <span class="price">$ 39.99</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="other-item">
+                            <img src="img/product8.jpg" />
+                            <span class="name">TERTIAL, Work lamp</span>
+                            <span class="price">$ 18.9</span>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
     </main>
-    <footer>
-        <div class="foot">
-            <div class="footerbox">
-                <ul class="social-icon-list with-colors">
-                    <li class="fb"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li class="in"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li class="pi"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                    <li class="tw"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="yo"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                </ul>
-            </div>
-            <p>© Inter IKEA Systems B.V. 1999-2020<br>
-            </p>
-            <div class="footer2">
-                <ul>
-                    <li><a href="#">Privacy & Security</a></li>
-                    <li>｜</li>
-                    <li><a href="#">Privacy policy</a></li>
-                    <li>｜</li>
-                    <li><a href="#">Terms and conditions</a></li>
-                </ul>
-            </div>
-        </div>
+    <!--footer-->
+    <footer class="footer">
+        <p class="copyright">© Inter IKEA Systems B.V. 1999-2021</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
