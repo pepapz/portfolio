@@ -40,7 +40,8 @@ body {
 .resume-link {
   display: inline-block;
 }
-.resume-link a {
+.resume-link div {
+  cursor: pointer;
   display: inline-block;
   padding: 6px 11px 6px 7px;
   font-size: 12px;
@@ -112,10 +113,31 @@ body {
   padding: 40px 0;
   margin: 0 40px;
 }
-.resume section + section {
-  border-top: 1px solid #e7e7e7;
+@media screen and (max-width: 480px) {
+  .resume section {
+    margin: 0 20px;
+  }
+}
+.resume-down {
+  padding-bottom: 0px !important;
+  text-align: right;
+}
+.resume-down a {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 8px 5px 8px;
+  font-size: 12px;
+  letter-spacing: -0.9px;
+  border-radius: 20px;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #b2b2b2;
+}
+.resume-down a i {
+  margin-right: 4px;
 }
 .resume-first {
+  padding-top: 20px !important;
   display: flex;
 }
 .resume-first img {
@@ -123,8 +145,14 @@ body {
   border: 1px solid #e7e7e7;
   border-radius: 20px;
 }
+@media screen and (max-width: 480px) {
+  .resume-first img {
+    width: 120px;
+  }
+}
 .resume-first .desc {
   padding: 20px;
+  text-align: left;
 }
 .resume-first .desc h4 {
   margin-bottom: 20px;
@@ -139,6 +167,11 @@ body {
 .resume-first .desc p {
   font-size: 14px;
 }
+@media screen and (max-width: 480px) {
+  .resume-first .desc p {
+    font-size: 12px;
+  }
+}
 .resume-first .desc p span {
   margin-right: 2px;
   color: #808080;
@@ -150,6 +183,7 @@ body {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid #e7e7e7;
 }
 .resume-second div {
   display: flex;
@@ -161,10 +195,135 @@ body {
   color: #808080;
   font-weight: normal;
 }
+@media screen and (max-width: 480px) {
+  .resume-second div h5 {
+    font-size: 13px;
+  }
+}
 .resume-second div p {
   margin-top: 10px;
   font-size: 13px;
 }
 .resume-second div p span {
-  color: #39f;
+  font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  .resume-second div p {
+    font-size: 12px;
+  }
+}
+
+html.modal-active, body.modal-active {
+  overflow: hidden;
+}
+
+#modal-container {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1;
+}
+#modal-container.two {
+  transform: scale(1);
+}
+#modal-container.two .modal-background {
+  background: rgba(0, 0, 0, 0);
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.two .modal-background .modal {
+  opacity: 0;
+  animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.two + .content {
+  animation: scaleBack 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.two.out {
+  animation: quickScaleDown 0s 0.5s linear forwards;
+}
+#modal-container.two.out .modal-background {
+  animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.two.out .modal-background .modal {
+  animation: scaleDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.two.out + .content {
+  animation: scaleForward 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container .modal-background {
+  display: table-cell;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+}
+#modal-container .modal-background .modal {
+  display: inline-block;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8) translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes scaleDown {
+  0% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8) translateY(1000px);
+    opacity: 0;
+  }
+}
+@keyframes scaleBack {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.85);
+  }
+}
+@keyframes scaleForward {
+  0% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes quickScaleDown {
+  0% {
+    transform: scale(1);
+  }
+  99.9% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }/*# sourceMappingURL=style.css.map */
