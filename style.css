@@ -74,6 +74,11 @@ body {
   gap: 10px;
   row-gap: 30px;
 }
+@media screen and (max-width: 480px) {
+  .content-list {
+    grid-template-columns: 1fr;
+  }
+}
 .content-list-img {
   display: flex;
   align-items: center;
