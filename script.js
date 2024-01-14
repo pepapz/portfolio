@@ -1,6 +1,6 @@
-$('.resume-link-btn').click(function(){
+$('.button').click(function(){ 
     var buttonId = $(this).attr('id');
-    $('#modal-container').removeAttr('class').addClass(buttonId);
+    $('#modal-container').removeAttr('class').addClass('open').addClass(buttonId);
     $('body').addClass('modal-active');
   })
   

@@ -80,12 +80,14 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.content-list div {
+  cursor: pointer;
+}
 .content-list-img {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border: 1px solid #e7e7e7;
   border-radius: 16px;
   aspect-ratio: 3/2;
 }
@@ -104,25 +106,32 @@ body {
   letter-spacing: -0.9px;
 }
 
-.resume {
+.modal-content {
+  max-width: 700px;
   width: 100%;
-  background-color: #fff;
+  background-color: #f6f6f7;
   border-radius: 20px;
 }
-.resume section {
+@media screen and (max-width: 767px) {
+  .modal-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.modal-content section {
   padding: 40px 0;
   margin: 0 40px;
 }
 @media screen and (max-width: 480px) {
-  .resume section {
+  .modal-content section {
     margin: 0 20px;
   }
 }
-.resume-down {
+.modal-content-down {
   padding-bottom: 0px !important;
   text-align: right;
 }
-.resume-down a {
+.modal-content-down a {
   cursor: pointer;
   display: inline-block;
   padding: 5px 8px 5px 8px;
@@ -133,84 +142,148 @@ body {
   color: #fff;
   background-color: #b2b2b2;
 }
-.resume-down a i {
+.modal-content-down a i {
   margin-right: 4px;
 }
-.resume-first {
+.modal-content-first {
   padding-top: 20px !important;
   display: flex;
 }
-.resume-first img {
+.modal-content-first img {
   width: 150px;
-  border: 1px solid #e7e7e7;
   border-radius: 20px;
 }
 @media screen and (max-width: 480px) {
-  .resume-first img {
+  .modal-content-first img {
     width: 120px;
   }
 }
-.resume-first .desc {
+.modal-content-first .desc {
   padding: 20px;
   text-align: left;
 }
-.resume-first .desc h4 {
+.modal-content-first .desc h4 {
   margin-bottom: 20px;
   font-size: 18px;
 }
-.resume-first .desc h4 span {
+.modal-content-first .desc h4 span {
   margin-left: 2px;
   color: #808080;
   font-weight: normal;
   font-size: 16px;
 }
-.resume-first .desc p {
+.modal-content-first .desc p {
   font-size: 14px;
 }
 @media screen and (max-width: 480px) {
-  .resume-first .desc p {
+  .modal-content-first .desc p {
     font-size: 12px;
   }
 }
-.resume-first .desc p span {
+.modal-content-first .desc p span {
   margin-right: 2px;
   color: #808080;
 }
-.resume-first .desc p + p {
+.modal-content-first .desc p + p {
   margin-top: 5px;
 }
-.resume-second {
+.modal-content-second {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border-top: 1px solid #e7e7e7;
 }
-.resume-second div {
+.modal-content-second div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.resume-second div h5 {
+.modal-content-second div h5 {
   font-size: 14px;
   color: #808080;
   font-weight: normal;
 }
 @media screen and (max-width: 480px) {
-  .resume-second div h5 {
+  .modal-content-second div h5 {
     font-size: 13px;
   }
 }
-.resume-second div p {
+.modal-content-second div p {
   margin-top: 10px;
   font-size: 13px;
 }
-.resume-second div p span {
+.modal-content-second div p span {
   font-weight: bold;
 }
 @media screen and (max-width: 480px) {
-  .resume-second div p {
+  .modal-content-second div p {
     font-size: 12px;
   }
+}
+.modal-content-third {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.modal-content-third h2 {
+  letter-spacing: -1.5px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.modal-content-third a {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.modal-content-third a:hover img {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+.modal-content-third a img {
+  width: 100%;
+  transition: all ease-in 0.3s;
+}
+.modal-content-third p {
+  margin-top: 20px;
+  align-self: flex-end;
+  font-size: 12px;
+  opacity: 0.5;
+  letter-spacing: -1px;
+}
+
+.pins {
+  margin-bottom: 20px;
+}
+
+.pin {
+  display: inline-block;
+  padding: 5px 8px 5px 8px;
+  font-size: 11px;
+  letter-spacing: -0.9px;
+  border-radius: 20px;
+  vertical-align: middle;
+  font-weight: normal;
+}
+.pin + .pin {
+  margin-left: 2px;
+}
+.pin.blue {
+  color: #30519f;
+  background-color: #e1e7fd;
+}
+.pin.yellow {
+  color: #814e21;
+  background-color: #fdf9c9;
+}
+.pin.cyan {
+  color: #2e5e72;
+  background-color: #d7f8fd;
+}
+.pin.green {
+  color: #31663c;
+  background-color: #e2fbe8;
 }
 
 html.modal-active, body.modal-active {
@@ -227,30 +300,30 @@ html.modal-active, body.modal-active {
   transform: scale(0);
   z-index: 1;
 }
-#modal-container.two {
+#modal-container.open {
   transform: scale(1);
 }
-#modal-container.two .modal-background {
+#modal-container.open .modal-background {
   background: rgba(0, 0, 0, 0);
   animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.two .modal-background .modal {
+#modal-container.open .modal-background .modal {
   opacity: 0;
   animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.two + .content {
+#modal-container.open + .content {
   animation: scaleBack 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.two.out {
+#modal-container.open.out {
   animation: quickScaleDown 0s 0.5s linear forwards;
 }
-#modal-container.two.out .modal-background {
+#modal-container.open.out .modal-background {
   animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.two.out .modal-background .modal {
+#modal-container.open.out .modal-background .modal {
   animation: scaleDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.two.out + .content {
+#modal-container.open.out + .content {
   animation: scaleForward 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container .modal-background {
@@ -262,6 +335,62 @@ html.modal-active, body.modal-active {
 #modal-container .modal-background .modal {
   display: inline-block;
   position: relative;
+}
+
+.resume {
+  display: none;
+}
+
+.resume-open .resume {
+  display: block;
+}
+
+.oracle {
+  display: none;
+}
+
+.oracle-open .oracle {
+  display: block;
+}
+
+.minidol {
+  display: none;
+}
+
+.minidol-open .minidol {
+  display: block;
+}
+
+.minime {
+  display: none;
+}
+
+.minime-open .minime {
+  display: block;
+}
+
+.wellexpo {
+  display: none;
+}
+
+.wellexpo-open .wellexpo {
+  display: block;
+}
+
+.raven {
+  display: none;
+}
+
+.raven-open .raven {
+  display: block;
+}
+
+.ikea {
+  display: none;
+}
+
+.ikea-open .ikea {
+  display: block;
 }
 
 @keyframes fadeIn {

@@ -1,4 +1,5 @@
 $mobile480: 480px;
+$mobile767: 767px;
  
 //respond mixin
 @mixin respond($size) {
@@ -86,13 +87,14 @@ body {
         @include respond($mobile480) {
             grid-template-columns: 1fr;
         }
-    
+        div {
+            cursor: pointer;
+        }
         &-img {
             display: flex;
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            border: 1px solid #e7e7e7;
             border-radius: 16px;
             aspect-ratio: 3 / 2;
             img {
@@ -114,10 +116,15 @@ body {
     
 }
 
-.resume {
+.modal-content {
+    max-width: 700px;
     width: 100%;
-    background-color: #fff;
+    background-color: #f6f6f7;
     border-radius: 20px;
+    @include respond($mobile767) {
+        width: 90%;
+        margin: 0 auto;
+    }
     section {
         padding: 40px 0;
         margin: 0 40px;
@@ -148,7 +155,6 @@ body {
         display: flex;
         img {
             width: 150px;
-            border: 1px solid #e7e7e7;
             border-radius: 20px;
             @include respond($mobile480) {
                 width: 120px;
@@ -211,8 +217,74 @@ body {
             }
         }
     }
+    &-third {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h2 {
+            letter-spacing: -1.5px;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        a {
+            display: flex;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            &:hover {
+                img {
+                    transform: scale(1.05);
+                    opacity: .8;
+                }
+            }
+            img {
+                width: 100%;
+                transition: all ease-in 0.3s;
+            }
+        }
+        p {
+            margin-top: 20px;
+            align-self: flex-end;
+            font-size: 12px;
+            opacity: .5;
+            letter-spacing: -1px;
+        }
+    }
 }
 
+.pins {
+    margin-bottom: 20px;
+}
+
+.pin {
+    display: inline-block;
+    padding: 5px 8px 5px 8px;
+    font-size: 11px;
+    letter-spacing: -0.9px;
+    border-radius: 20px;
+    vertical-align: middle;
+    font-weight: normal;
+    & + .pin {
+        margin-left: 2px;
+    }
+    &.blue {
+        color:#30519f;
+        background-color: #e1e7fd;
+    }
+    &.yellow {
+        color:#814e21;
+        background-color: #fdf9c9;
+    }
+    &.cyan {
+        color:#2e5e72;
+        background-color: #d7f8fd;
+    }
+    &.green {
+        color:#31663c;
+        background-color: #e2fbe8;
+    }
+}
   
 html,body {
     &.modal-active {
@@ -229,7 +301,7 @@ html,body {
     left:0;
     transform:scale(0);
     z-index:1;
-    &.two {
+    &.open {
         transform:scale(1);
         .modal-background {
         background:rgba(0,0,0,.0);
@@ -265,6 +337,62 @@ html,body {
         position:relative;
         }
     }
+}
+
+.resume {
+    display: none;  
+}
+
+.resume-open .resume {
+    display: block;
+}
+
+.oracle {
+    display: none;
+} 
+
+.oracle-open .oracle {
+    display: block;
+}
+
+.minidol {
+    display: none;
+} 
+
+.minidol-open .minidol {
+    display: block;
+}
+
+.minime {
+    display: none;
+}
+
+.minime-open .minime {
+    display: block;
+}
+
+.wellexpo {
+    display: none;
+}
+
+.wellexpo-open .wellexpo {
+    display: block;
+}
+
+.raven {
+    display: none;
+}
+
+.raven-open .raven {
+    display: block;
+}
+
+.ikea {
+    display: none;
+}
+
+.ikea-open .ikea {
+    display: block;
 }
 
 
