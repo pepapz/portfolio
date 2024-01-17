@@ -41,11 +41,6 @@ button {
 
 .header-top {
     background: #fff;
-    z-index: 50;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
     line-height: 1;
 }
 
@@ -102,10 +97,11 @@ header {
 .user-menu {
     width: 160px;
     height: 32px;
-    margin-left: 485px;
     display: flex;
     align-items: center;
     line-height: 1;
+    flex: 1;
+    justify-content: flex-end;
 }
 
 .search {
@@ -1369,7 +1365,6 @@ header {
     padding-top: 16px;
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
     padding-right: 24px;
     margin: 9px 0 6px 20px;
 }
@@ -1413,7 +1408,6 @@ header {
 
 .keyword-inner {
     position: relative;
-    width: 1280px;
     margin: 0 auto;
     padding: 0 24px;
 }

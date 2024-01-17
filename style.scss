@@ -264,25 +264,21 @@ body {
     letter-spacing: -0.9px;
     border-radius: 20px;
     vertical-align: middle;
-    font-weight: normal;
+    font-weight: 600;
     & + .pin {
         margin-left: 2px;
     }
     &.blue {
-        color:#30519f;
-        background-color: #e1e7fd;
+        color:#488cfe;
+        background-color: #e3f2fd;
     }
     &.yellow {
-        color:#814e21;
-        background-color: #fdf9c9;
-    }
-    &.cyan {
-        color:#2e5e72;
-        background-color: #d7f8fd;
+        color:#ffb620;
+        background-color: #fff8e1;
     }
     &.green {
-        color:#31663c;
-        background-color: #e2fbe8;
+        color:#4caf50;
+        background-color: #e8f5e9;
     }
 }
   
@@ -368,6 +364,14 @@ html,body {
 }
 
 .minime-open .minime {
+    display: block;
+}
+
+.millie {
+    display: none;
+}
+
+.millie-open .millie {
     display: block;
 }
 
