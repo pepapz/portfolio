@@ -8,3 +8,10 @@ $('.button').click(function(){
     $(this).addClass('out');
     $('body').removeClass('modal-active');
   });
+
+  function setScreenSize() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  setScreenSize();
+  window.addEventListener('resize', setScreenSize);
